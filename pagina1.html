@@ -1,0 +1,114 @@
+<!--ALUNO: Andrêei F\erreira Pessoa da Silva
+    RA: 12723128471-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Informática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .letreiro {
+            color: white;
+            background-color: green;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 2px solid red;
+            background-color: green;
+        }
+        th, td {
+            border: 1px solid red;
+            padding: 10px;
+            text-align: center;
+        }
+        .preco {
+            background-color: blue;
+            font-weight: bold;
+        }
+        .linha-horizontal {
+            border: none;
+            height: 2px;
+            background-color: black;
+            margin: 20px 0;
+        }
+        .botao {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .cursos, .fotos {
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="letreiro">Bem-vindo à Loja de Informática!</div>
+
+    <nav>
+        <ul>
+            <li><a href="#tabela-precos">Tabela de Preços</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#fotos">Fotos</a></li>
+        </ul>
+    </nav>
+
+    <a href="pagina2.html" class="botao">Ir para a Página 2</a>
+
+    <h2 id="tabela-precos">Tabela de Preços</h2>
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th class="preco">Preço</th>
+            <th>Estoque</th>
+        </tr>
+        <tr>
+            <td>Capa estofado</td>
+            <td class="preco">R$ 15,00</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Pneu</td>
+            <td class="preco">R$ 130,00</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Lanterna traseira</td>
+            <td class="preco">R$ 12,00</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <hr class="linha-horizontal">
+
+    <h2 id="cursos">Cursos</h2>
+    <p>Informações sobre os cursos oferecidos.</p>
+    <hr class="linha-horizontal">
+
+    <h2 id="fotos">Fotos</h2>
+    <img src="imagem_exemplo.jpg" alt="Exemplo de Foto" style="width: 100%; max-width: 500px; display: block; margin: auto;">
+    <hr style="border: 1px solid blue;">
+    <div style="width: 20%; margin: auto; text-align: left;">Nome do Aluno</div>
+    <hr class="linha-horizontal">
+
+    <button class="botao" onclick="window.scrollTo(0, 0);">Voltar ao Topo</button>
+
+</body>
+</html>
+
